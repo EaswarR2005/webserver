@@ -46,7 +46,6 @@ content='''
 </body>
 </html>
 '''
-
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Get request received...")
@@ -60,9 +59,7 @@ server_address =('',80)
 httpd = HTTPServer(server_address,MyServer)
 httpd.serve_forever()
 ```
-
 ## OUTPUT:
 ![image](https://github.com/EaswarR2005/webserver/assets/146931525/8c75b397-5c3f-45e0-b7de-9bdefe2b67fb)
-
 ## RESULT:
 The program is executed succesfully
